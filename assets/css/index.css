@@ -37,8 +37,10 @@ header{
     width: 314px;
 }
 .head-left .btn input{
+    
+    padding: 20px 20px 20px 10px;
     outline: none;
-    width: 188px;
+    /* width: 188px; */
     border: none;
     background: transparent;
     font-size: 20px;
@@ -50,6 +52,11 @@ header{
 }
 button{
     border: none;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    bottom: 20px;
+
 }
 .btn{
     position: relative;
@@ -57,11 +64,13 @@ button{
 border: none;    
     width: 314px;
     background: #dbdbdb52;
-    padding: 20px 20px 20px 10px ;
+    /* padding: 20px 20px 20px 10px ; */
     border-radius: 16px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    /* display: flex; */
+    text-align: top;
+    /* align-items: center; */
+    /* justify-content: space-between; */
+    /* align-items: center; */
     height: 64px;
 }
 .head-middle{
@@ -72,6 +81,7 @@ border: none;
     padding-bottom: 33px;
 }
 .head-right{
+    gap: 3px;
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -83,12 +93,33 @@ border: none;
     padding-right:5px;
 }
 .head-bottom{
+    padding-top: 24px;
+    /* padding-bottom: 24px; */
     border-top:1px solid#00000041 ;
     grid-column: span 3;
-    padding: 24px 0px;
+    /* padding: 24px 0px; */
+}
+.head-bottom .won{
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+}
+
+.forp{
+    display: flex;
+    align-items: center;
+
+    padding-bottom: 24px;
+    /* padding: 24px 0px; */
+}
+
+.head-bottom ul .hai{
+    padding-bottom: 24px;
 }
 .head-bottom ul{
     gap: 75px;
+    /* padding-bottom: 24px; */
+    /* padding: 24px 0px; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -98,15 +129,311 @@ header .container-fluid .row{
     grid-template-columns: repeat(3,1fr);
 }
 .head-bottom ul li a {
+    display: block;
     font-size: 20px;
-    color: #000000b6;
+    /* padding-bottom: 24px; */
+    color: #000000b6;}
+ header{
+    /* position: relative; */
+ }
+ 
+.head-bottom{
+    position: relative;
 }
+    header .container-fluid .row  .head-bottom ul li .dropdown{
+        background: white;
+        width: 100%;
+        left: 0px;
+        top: 50px;
+        /* padding: 33px 39px 39px 39px; */
+        display: none;
+        position: absolute;
+        z-index: 999;
+    }
+    
+    header .container-fluid .row  .head-bottom ul li:hover .dropdown{
+        display: block;
+    }
+    header .container-fluid .row  .head-bottom ul li .dropdown:hover{
+        display: block;
+    }
+    
+    header .dropdown .main-down{
+        display: flex;
+        justify-content: space-between;
+    padding: 33px 39px 39px 39px;
+    }
+    
+    header .dropdown .main-down .left-down{
+        display: flex;
+        width: 47%;
+        /* gap: 180px; */
+        justify-content: space-between;
+    }
+    
+    header .dropdown .main-down .left-down .cool1 h4{
+        font-size: 14px;
+        font-weight: 500;
+    }
+    header .dropdown .main-down .left-down .cool1 ul {
+        display: block;
+        padding-top: 10px;
+        /* padding-bottom: 20px; */
+        /* font-size: 1px; */
+    }
+    
+    header .dropdown .main-down .left-down .cool1 ul li a{
+    font-size: 13px;
+    font-family: 200;
+    line-height: 23px;
+    color: grey;
+    }
+    header .dropdown .main-down .right-down .righttop h4{
+        font-size: 14px;
+        font-weight: 500;
+    } 
+    header .dropdown .main-down .right-down .forfright{
+        /* display: flex; */
+        gap: 30px;
+        /* justify-content: space-between; */
+    }
+
+    header .dropdown .main-down .right-down .forfright .mainright .swiper-wrapper{
+    /* width:200px; */
+    }
+    header .dropdown .main-down .right-down{
+        width: 490px;
+    }
+    
+    header .dropdown .main-down .right-down .righttop .slidebtn{
+        /* position: ab/solute; */
+        /* left: 420px; */
+        /* padding-bottom: 170px; */
+    }
+    header .dropdown .main-down .right-down .righttop .slidebtn .swiper-button-prev:after{
+        position: absolute;
+        left: 420px;
+        color: #438565; 
+     top: 0px;
+      font-size: 22px;
+    }
+    header .dropdown .main-down .right-down .righttop .slidebtn .swiper-button-next::after{
+    color: #438565;
+    position: absolute;
+    font-size: 22px;
+    top: 0px;
+    /* size: 10px; */
+    }
+    header .dropdown .main-down .right-down .righttop{
+        padding-bottom:20px;
+        display: flex;
+        position: relative;
+        justify-content: space-between;
+        top: 0px;
+
+        /* justify-content: space-between ; */
+        /* position: absolute; */
+        /* top: 240px; */
+    }
+    header .dropdown .main-down .right-down .mainright .imgmain .imgdes{
+        display: flex;
+        font-size: 13px;
+        flex-direction: column;
+    }
+    header .dropdown .main-down .right-down .mainright .imgmain img{
+        width: 136px;
+    }
+    header .dropdown .bot{
+        padding: 30px 50px;
+        display: flex;
+        justify-content: space-between;
+        gap: 30px;
+    }
+    
+    header .dropdown .bot .right-bot{
+        background-image: url(../img/mm_02_1180x.png.webp);
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 40px 50px;
+}
+    .how{
+        display: flex;
+        gap: 10px   ;
+        align-items: center;
+    }
+header .dropdown .left-bot span{
+    color: blue;
+    font-size: 14px;
+}
+header .dropdown .left-bot h3{
+    padding-top: 8px;
+    font-size: 25px;
+    font-weight: 500;
+}
+
+header .dropdown .bot .left-bot .how h5{
+    font-size: 17px;
+    font-weight:400;
+
+}
+    header .dropdown .left-bot{
+        background-image: url(../img/mm_01_1180x.png);
+        width: 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding: 40px 50px;
+        
+    }
+    header .dropdown .bot .right-bot h3{
+        font-size: 24px;
+        font-weight: 600;
+    }
+
+    header .dropdown .bot .right-bot h4{
+        font-weight: 600;
+        font-size: 16px;
+    }
+    header .dropdown .bot .right-bot{
+        color: white;
+        line-height: 29px;
+    }
+
+    
+    header .container-fluid .row  .head-bottom ul li .sub-menu{
+        display: none;
+        /* font-size: 12px; */
+
+    }
+    header .container-fluid .row  .head-bottom .sub-menu ul li a{
+        font-size: 15px;
+        display: block;
+    }
+    header .container-fluid .row  .head-bottom .sub-menu ul li{
+        padding-top: 12px;
+        padding-bottom: 6px;
+        margin-bottom: 4px;
+        /* font-size: 12px; */
+        border-bottom:solid 1px #438546;
+        /* border: solid 1px; */
+    }
+    header .container-fluid .row  .head-bottom .sub-menu ul{
+        display: block;
+    }
+    header .container-fluid .row  .head-bottom ul li:hover .sub-menu
+    {
+        top: 50px;
+        background: white;
+        width: 200px;
+        display: block;
+        padding-top: 17px;
+        position: absolute;
+        /* padding-top: 25px; */
+        padding-left: 15px;
+        /* padding-right: 2px; */
+        z-index:999;
+
+    }
+    .start{
+        display: flex;
+        justify-content: space-between;
+    }
+    .inside{
+        display: flex;
+        justify-content: space-between;
+    }
+    header .container-fluid .row  .head-bottom .sub-menu ul li.inside .sub-menu2{
+        display: none;
+    }
+    
+    header .container-fluid .row  .head-bottom .sub-menu ul li.inside:hover .sub-menu2{
+    position: absolute;
+    display: block;
+    left: 200px;
+    width: 200px;
+    top: 72px;
+
+    /* border-left:1px #438546; */
+    background: white;
+    }
+    
+    header .container-fluid .row  .head-bottom .sub-menu ul li.start .sub-menu3{
+        display: none;
+    }
+    
+    header .container-fluid .row  .head-bottom .sub-menu ul li.start:hover .sub-menu3{
+        position: absolute;
+        display: block;
+        left: 200px;
+        width: 200px;
+        top: 29px;
+        /* border-left:1px #438546; */
+        background: white;
+        }
+        .for-slider{
+            /* position: absolute; */
+            /* width: 90%; */
+        }
+
+    /* header .container-fluid .row  .head-bottom ul li .dropdown .row-main
+    {
+        display: flex;
+        justify-content: space-between;
+
+    }
+    header .container-fluid .row  .head-bottom ul li .dropdown .row-main .item-1 ul{
+        display: block;
+    }
+    
+    header .container-fluid .row  .head-bottom ul li .dropdown .row-main .drop-menu{
+        display: flex;
+        justify-content: space-between;
+    }
+    header .container-fluid .row  .head-bottom ul li .dropdown .row-main .drop-menu .menu1{
+        justify-content: center;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+    }
+    header .container-fluid .row  .head-bottom ul li .dropdown .row-main .drop-menu .menu1 .slider-img .tick1 img{
+        padding-top: 10px;
+        padding-bottom: 12px;
+        width: 135px;
+    }
+    
+    header .container-fluid .row  .head-bottom ul li .dropdown .row-bot{
+        display: flex;
+        justify-content: space-between;
+
+    } */
+    
+/* }
+.head-bottom ul li ul.dropdown {
+    width: 32%;
+    background-color: #ffffff;
+    display: none;
+    position: absolute;
+    color: black;
+    z-index: 1;
+    padding: 10px;
+}
+ul.dropdown li {
+    padding-top: 20px;
+}
+.head-bottom ul li:hover ul.dropdown{
+    display: block;
+} */
+
+
 /* home */
 /* section */
 section.home .container-full .row{
     display: grid;
     grid-template-columns: repeat(4,1fr);
 }
+
 section.home .container-full .card{
     position: relative;
 }
@@ -141,11 +468,13 @@ section.collection .row .card{
 }
 section.collection .row .card .card-new{
     /* width: 83px; */
-    padding: 3px 23px;
+    padding: 3px 16px;
+    font-weight: 600;
     /* height: 24px; */
     text-align: center;
     position: absolute;
-    top: 8.6px;
+    top: 7px;
+    transform: skew(-20deg,0deg);
     right: -28px;
     color: white;
     background: #F88240;
@@ -207,7 +536,7 @@ section.collection .container .row .card .card-cont .card-middle{
 }
 section.collection .container .row .card .card-cont .card-bottom{
     display: flex;
-    /* padding-top: 26px; */
+    padding-top: 4px;
     justify-content: space-between;
     align-items: flex-end;
 }
@@ -215,7 +544,7 @@ section.collection .container .row .card .card-cont .card-bottom .item-price h4{
     font-size: 22px;
 }
 section.collection .container .row .card .card-cont .card-bottom .cart{
-    padding: 14px 14px 11px 14px;
+    padding: 12px 14px 12px 14px;
     background: #438546;
     border-radius: 50%;
 }
@@ -225,12 +554,15 @@ section.collection .container .row .card .card-cont .card-bottom .cart i{
     font-size: 20px;
 }
 /* discount */
+section.discount .container-full .row .boiii .swiper .swiper-wrapper .swiper-slide img{
+}
 section.discount{
+    /* padding-left: 30px; */
     padding-bottom: 50px;
 }
-section.discount .container-full .row .boiii{
+section.discount .container-full  .swiper{
     box-shadow: 8px 10px 35px 3px #0000000F;
-    padding: 20px 0px;
+    padding: 20px 28px;
 }
 
 section.discount .container-full .slide1{
@@ -255,13 +587,13 @@ align-items: center;
     color: #438565;
 }
 section.T-shirt{
-    padding-bottom: 100px;
+    padding-bottom: 80px;
 }
 section.T-shirt .container .heading{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 56px 0px 40px 0px;
+    padding: 60px 0px 53px 0px;
 }
 section.T-shirt .container .heading .hcontent h2{
     font-size: 48px;
@@ -320,7 +652,7 @@ section.T-shirt .container .row .card .card-cont .card-bottom .item-price h4{
     font-size: 22px;
 }
 section.T-shirt .container .row .card .card-cont .card-bottom .cart{
-    padding: 15px;
+    padding: 12px 14px 12px 14px;
     background: #438546;
     border-radius: 50%;
 }
@@ -346,14 +678,14 @@ section.T-shirt .container .row .card .card-cont .card-bottom .cart i{
     color: #438565;
 }
 section.socksandcap{
-    padding-bottom: 100px;
+    padding-bottom: 110px;
     background: #fafafa;
 }
 section.socksandcap .container .heading{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 56px 0px 40px 0px;
+    padding: 88px 0px 53px 0px;
 }
 section.socksandcap .container .heading .hcontent h2{
     font-size: 48px;
@@ -404,7 +736,7 @@ section.socksandcap .container .row .card .card-cont .card-middle{
 }
 section.socksandcap .container .row .card .card-cont .card-bottom{
     display: flex;
-    /* padding-top: 26px; */
+    padding-top: 4px;
     justify-content: space-between;
     align-items: flex-end;
 }
@@ -412,7 +744,7 @@ section.socksandcap .container .row .card .card-cont .card-bottom .item-price h4
     font-size: 22px;
 }
 section.socksandcap .container .row .card .card-cont .card-bottom .cart{
-    padding: 15px;
+    padding: 12px 14px 12px 14px;
     background: #438546;
     border-radius: 50%;
 }
@@ -440,13 +772,13 @@ section.socksandcap .container .row .card .card-cont .card-bottom .cart i{
     color: #438565;
 }
 section.women{
-    padding-bottom: 100px;
+    /* padding-bottom: 100px; */
 }
 section.women .container .heading{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 56px 0px 40px 0px;
+    padding: 80px 0px 53px 0px;
 }
 section.women .container .heading .hcontent h2{
     font-size: 48px;
@@ -498,6 +830,8 @@ section.women .container .row .card .card-cont .card-middle{
 }
 section.women .container .row .card .card-cont .card-bottom{
     display: flex;
+    
+    padding-top: 4px;
     /* padding-top: 26px; */
     justify-content: space-between;
     align-items: flex-end;
@@ -506,13 +840,105 @@ section.women .container .row .card .card-cont .card-bottom .item-price h4{
     font-size: 22px;
 }
 section.women .container .row .card .card-cont .card-bottom .cart{
-    padding: 15px;
+    padding: 12px 14px 12px 14px;
     background: #438546;
     border-radius: 50%;
 }
 section.women .container .row .card .card-cont .card-bottom .cart i{
     color: white;
     font-size: 20px;
+}
+
+
+
+
+
+section.more-products{
+    /* padding-top: 88px; */
+    padding-bottom: 108px;
+}
+section.more-products .container-full .intro{
+    padding-bottom: 88px;
+    padding-top: 88px;
+    text-align: center;
+    font-weight: 700;
+}
+section.more-products .container-full .intro h2 span{
+    background: white;
+    border: none;
+    border-radius: 6px;
+    padding: 0px 28px;
+    /* z-index: -999; */
+    /* overflow: hidden; */
+    /* position: absolute; */
+/* text-align: center; */
+
+
+}
+section.more-products .container-full .intro h2 ::after{
+    
+    content: "";
+    z-index: -1;
+    /* display: block; */
+    height: 4px;
+    width: 50%;
+    position: absolute;
+    margin: auto;
+    top: 50%;
+    left: 50%;
+    background: #438546;
+    border-radius: 6px;
+    transform: translate(-50%, -50%);
+}
+section.more-products .container-full .intro h2{
+ font-size: 40px; 
+ /* background: #438546; */
+ position: relative;
+
+}
+/* section.more-products .container-full .intro h2 span::before{
+    content: "";
+    display: block;
+    padding: 3px 0px;
+    width: 102px;
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    background: #438565;
+    border-radius: 6px;
+    transform: translateY(-50%);
+} */
+
+/* section.more-products .container-full .intro h2 span::after{
+    content: "";
+    display: block;
+    padding: 6px 0px;
+    width: 182px;
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    background: #438565;
+    border-radius: 6px;
+    transform: translateY(-50%);
+} */
+section.more-products .container-full .row .swiper .swiper-wrapper{
+    /* display: flex;
+    flex-wrap: wrap; */
+    padding: 35px 0px 83px 24px;
+}
+
+section.more-products .container-full .row .swiper .swiper-wrapper .swiper-slide .img-box img{
+   /* max-width: 100%; */
+   padding-top: 50px;
+}
+section.more-products .container-full .row{
+padding-top: 0px;
+border: solid 1px #438546;
+width: 100%;
+border-radius: 25px;
+}
+div.swiper-slide .swiper-slide-active{
+    width: 324px;
 }
 /* footer */
 footer{
